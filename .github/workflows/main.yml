@@ -16,8 +16,9 @@ jobs:
         with:
           config_timezone: Europe/Berlin
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, repositories
+          base: header
           plugin_lines: yes
           plugin_isocalendar: yes
           plugin_languages: yes
-          config_order: base.header, isocalendar, base.repositories, languages, lines
+          plugin_topics: yes
+          config_order: base.header, isocalendar, topics, languages, lines
