@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@v3.24
+      - uses: lowlighter/metrics@v3.34
         with:
           filename: general.svg
           output_action: gist
